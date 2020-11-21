@@ -3,7 +3,7 @@
 
 
 using namespace std;
-double a,b,c, polowaobw, pole;
+double a,b,c, half_circuit, area;
 
 
 int main() {
@@ -24,9 +24,9 @@ int main() {
     if(a+b >c && a+c>b && b+c>a){
 
        cout<<"Da sie utworzyc trojkat"<<endl;
-       polowaobw = (a+b+c)/2;
-       pole = sqrt(polowaobw*(polowaobw-a)*(polowaobw-b)*(polowaobw-c));
-       cout<<"Pole trojkata wynosi: "<<pole;
+       half_circuit = (a+b+c)/2;
+       area = sqrt(half_circuit*(half_circuit-a)*(half_circuit-b)*(half_circuit-c));
+       cout<<"Pole trojkata wynosi: "<<area;
        }
 
 

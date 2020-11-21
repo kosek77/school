@@ -4,18 +4,18 @@ using namespace std;
 
 
 int main(){
-    int rok, zodiak;
-    int powtarzalnosc = 12;
+    int year, zodiac;
+    int repeatability = 12;
 
     cout<<"Program podaje chiski znak zodiaku"<<endl;
 
     cout<<"Podaj rok urodzenia: ";
-    cin>>rok;
+    cin>>year;
 
-    zodiak = rok % powtarzalnosc;   //zwraca nam reszte z dzielenia przez w tym przypadku 12
+    zodiac = year % repeatability;   //zwraca nam reszte z dzielenia przez w tym przypadku 12
 
 
-    switch(zodiak){
+    switch(zodiac){
           case 0:
             cout<<"Twoim chinskim znakiem zodiaku jest malpa";
           break;

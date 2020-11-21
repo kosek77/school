@@ -5,7 +5,7 @@
 
 using namespace std;
 int a,b,c;
-double delta,pzdelta, xjed, xdwa, x;
+double delta,sqrt_delta, x_first, x_second, x;
 
 
 int main()
@@ -26,7 +26,7 @@ int main()
     if(a != 0){
 
        delta = b*b -4*a*c;
-       pzdelta = sqrt(delta);
+       sqrt_delta = sqrt(delta);
 
 
           if(delta<0){
@@ -38,10 +38,10 @@ int main()
              cout<<"Rownanie ma jedno rozwiazanie: "<<x;
           }
           else{
-             xjed = (-b-pzdelta) / (2*a);
-             xdwa = (-b+pzdelta) / (2*a);
+             x_first = (-b-sqrt_delta) / (2*a);
+             x_second = (-b+sqrt_delta) / (2*a);
 
-            cout<<"Rownanie ma dwa rozwiazania: "<<xjed<<" oraz "<<xdwa;
+            cout<<"Rownanie ma dwa rozwiazania: "<<x_first<<" oraz "<<x_second;
           }
     }
 
